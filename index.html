@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Frontend Mentor | Newsletter Sign-Up Form With Success Message</title>
+  
+</head>
+<body>
+    <div class="newsletter-container active">
+      <div class="newsletter-container-left side">
+        <div class="newsletter-info-board">
+          <div class="newsletter-info-board-title">
+            <h2>Stay updated !</h2>
+            <p>Join 60.000+ product managers receiving monthly <br>updates on: </p>
+            <div class="newsletter-feature-lists">
+              <ul class="feature-item-lists">
+                <li class="feature-list-item">
+                  <img src="assets/images/icon-list.svg" alt="icon-list-img" width="20">
+                  <p>Product discovery and building what matters</p>
+                </li>
+                <li class="feature-list-item">
+                  <img src="assets/images/icon-list.svg" alt="icon-list-img" width="20">
+                  <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li class="feature-list-item">
+                  <img src="assets/images/icon-list.svg" alt="icon-list-img" width="20">
+                  <p>And much more!</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="newsletter-email-form">
+            <div class="form-title-field">
+              <label for="email-input">Email address</label>
+              <span class="error-label">Valid email required</span>
+            </div>
+            <input type="email" name="email-input" id="email-input" class="form-email-input " placeholder="email@company.com">
+            <a href="javascript:void(0)" id="email-send-btn">Subscribe to monthly newsletter</a>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-container-right side"></div>
+
+   
+    </div>
+
+    <div class="newsletter-success hidden">
+
+        <div class="newsletter-content">
+          <div class="message-icon">
+            <img src="assets/images/icon-success.svg" alt="success-icon-img" width="55">
+          </div>
+  
+          <div class="message-contents">
+            <div class="message-title">
+              <h1>Thanks for <br>subscribing!</h1>
+            </div>
+  
+            <div class="message-description">
+              <p>A comfirmation email has been sent to <br> <a id="subs-email">....</a> Please open it and click <br>the button inside to confirm your subscription.</p>
+            </div>
+          </div>
+        </div>
+       
+
+        <a href="javascript:void(0)" id="close-msg-btn">Dismiss message</a>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
